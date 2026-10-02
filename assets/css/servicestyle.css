@@ -1,0 +1,177 @@
+.allcard {
+  
+  justify-items: center;
+}
+
+.card-services {
+  top: 50px;
+  margin: 64px;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 150px;
+  border-radius: 15px;
+  padding: 33px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-alg {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  display: inline-flex;
+}
+
+.services-title {
+  width: 150px;
+  text-align: left;
+  display: contents;
+}
+
+.services-title h2 {
+  color: rgb(255, 255, 255);
+}
+
+.services-descr p {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.services-descr {
+  margin: 73px;
+  margin-right: 34px;
+  width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ .card-services::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.04); /* Dark overlay for realistic depth */
+      }
+
+
+.icon-serv img {
+  text-decoration: none !important;
+  color: #eae5e5;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.card-services:nth-child(1) {
+  background: linear-gradient(135deg, #ff7e5f, #4b64de);
+}
+.card-services:nth-child(2) {
+  background: linear-gradient(135deg, #7FE6B1, #3E64A0);
+}
+.card-services:nth-child(3) {
+  background: linear-gradient(135deg, #AD63F0, #4DB7E7);
+}
+.card-services:nth-child(4) {
+  background: linear-gradient(135deg, #03c6e4, #557f92);
+}
+.card-services:nth-child(5) {
+  background: linear-gradient(135deg, #d67900, #e2c04d);
+}
+.card-services:nth-child(6) {
+  background: linear-gradient(135deg, #a5487b, #bb0202);
+}
+
+
+@media (max-width: 768px) {
+  .parallax-element {
+      transform: none !important;
+      opacity: 1 !important;
+  }
+}
+
+@media  (min-width: 770px) {
+  .card-services {
+    display: flex;
+}
+.parallax-element{
+
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    will-change: transform, opacity;
+}
+  
+}
+
+@media (max-width: 768px) {
+  .allcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .card-services {
+    width: 88%; /* Adjust to occupy less space */
+    height: auto; /* Allow height to adjust automatically */
+    margin: 20px 0;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+   padding-bottom: 0px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+  .icon-serv img {
+    
+    margin-right: 20px;
+    
+  }
+  .service-alg {
+    flex-direction: row; /* Ensure the icon and title stay in a row */
+    justify-content: flex-start; /* Align icon and title to the left */
+    width: 100%; /* Make it full width */
+  }
+
+  .services-title {
+    width: auto; /* Adjust width for responsiveness */
+    text-align: left;
+  }
+
+  .services-title h2 {
+    font-size: 20px; /* Reduce font size for smaller devices */
+  }
+
+  .services-descr {
+    margin: 1px 0; /* Reduce margin */
+    width: 100%; /* Make it full width */
+  }
+
+  .services-descr p {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  .icon-serv img {
+    width: 60px; /* Adjust icon size */
+    height: 60px; /* Adjust icon height */
+    margin-right: 30px; /* Reduce margin */
+  }
+
+
+}
+

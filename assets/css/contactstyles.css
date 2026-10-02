@@ -1,0 +1,253 @@
+
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Home
+4. Header
+	4.1 Logo
+	4.2 Navigation
+	4.3 Search
+	4.4 Hamburger
+5. Menu
+	5.1 Menu Social
+	5.2 Menu copyright
+6. Find
+7. Contact
+	7.1 Contact Form
+	7.2 Contact Map
+8. Newsletter
+9. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
+/*********************************
+7. Contact
+*********************************/
+
+.contact
+{   
+	background-color: #FFFFFF;
+	padding-top: 107px;
+	padding-bottom: 120px;
+}
+.contact_title
+{  
+	
+	font-size: 40px;
+	font-weight: 400;
+	color: #131a2f;
+}
+.contact_subtitle
+{    
+	
+	
+	 
+	
+	
+}
+.contact_subtitle img{
+	position: relative;
+	top: 30px;
+	left: 60px;
+	width: 200px;
+	max-width: 500px;
+	transform: translateY(-50%) scale(2.4);
+}
+.contact_content
+{    padding: 35px;
+	
+	 margin-top: 24px;
+}
+.contact_text 
+{
+	margin-bottom: 48px;
+}
+.contact_info
+{  
+	margin-top: 15px;
+}
+.contact_info_box
+{   
+	
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	line-height: 3px;
+	font-size: 1px;
+	font-weight: 500;
+	color: #FFFFFF;
+	text-align: center;
+	background: #fe3c52;
+	font-style: italic;
+}
+.contact_info_container
+{      
+	position: relative;
+	
+	display: inline-flex;
+	max-width: 380px;
+}
+.contact_info_content ul 
+{
+	
+    
+	padding-left: 7px;
+	padding-right: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: 16px;
+	color: #6c6d70;
+	
+}
+.contact_info_content ul li{
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 4px;
+}
+
+.contact_info_content ul li i{
+	
+	
+	margin-right: 8px;
+	}
+
+.column{
+	background-color: #e4e4e463;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+
+/*********************************
+7.1 Contact Form
+*********************************/
+.contact_form {
+	padding: 10px;
+	
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_row {
+    display: flex;
+    gap: 20px;
+}
+
+.form_group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between label and input */
+}
+
+label span{
+	color: #fe3c52;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Adjust to your design */
+}
+
+.contact_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+textarea.contact_input {
+    resize: vertical;
+}
+
+
+
+.captcha_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha_display {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.captcha_refresh_btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.contact_send_btn
+{
+	width: 161px;
+	height: 56px;
+	background: rgba(254,60,82,1);
+	border: none;
+	outline: none;
+	float: right;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 14px;
+}
+.contact_send_btn:hover
+{
+	background: rgba(254,60,82,0.8);
+}
+
+/*********************************
+7.2 Contact Map
+*********************************/
+
+.contact_map
+{    
+	margin-top: 26px;
+}
+#google_map
+{
+	width: 100%;
+	height: 532px;
+}
+.map_container
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#map
+{
+	width: 100%;
+	height: calc(100% + 30px);
+}
+
+
+@media(max-width: 1118px) {
+
+	.form_row {
+		display: inline;
+		gap: 20px;
+	}
+
+}
